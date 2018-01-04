@@ -1,5 +1,6 @@
 module.exports = {
 	devServer:{
+		port:"80",
 		contentBase:"./public",
 		historyApiFallback:true,
 		inline:true
