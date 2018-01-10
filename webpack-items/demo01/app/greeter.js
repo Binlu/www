@@ -1,5 +1,7 @@
+var config=require("config.json");
+
 module.exports={
-	says:"hello world!",
+	says:config.txt,
 	color:"red",
-	fontsize:"14px"
+	fontsize:"54px"
 }

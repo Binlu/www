@@ -73,7 +73,7 @@ eval("const greeter=__webpack_require__(1);\r\nvar odiv=document.querySelector(\
 /* 1 */
 /***/ (function(module, exports) {
 
-eval("module.exports={\r\n\tsays:\"hello world!\",\r\n\tcolor:\"red\",\r\n\tfontsize:\"24px\"\r\n}//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9hcHAvZ3JlZXRlci5qcz82M2FiIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EiLCJmaWxlIjoiMS5qcyIsInNvdXJjZXNDb250ZW50IjpbIm1vZHVsZS5leHBvcnRzPXtcclxuXHRzYXlzOlwiaGVsbG8gd29ybGQhXCIsXHJcblx0Y29sb3I6XCJyZWRcIixcclxuXHRmb250c2l6ZTpcIjI0cHhcIlxyXG59XG5cblxuLy8vLy8vLy8vLy8vLy8vLy8vXG4vLyBXRUJQQUNLIEZPT1RFUlxuLy8gLi9hcHAvZ3JlZXRlci5qc1xuLy8gbW9kdWxlIGlkID0gMVxuLy8gbW9kdWxlIGNodW5rcyA9IDAiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///1\n");
+eval("module.exports={\r\n\tsays:\"hello webpack!\",\r\n\tcolor:\"red\",\r\n\tfontsize:\"54px\"\r\n}//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9hcHAvZ3JlZXRlci5qcz82M2FiIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EiLCJmaWxlIjoiMS5qcyIsInNvdXJjZXNDb250ZW50IjpbIm1vZHVsZS5leHBvcnRzPXtcclxuXHRzYXlzOlwiaGVsbG8gd2VicGFjayFcIixcclxuXHRjb2xvcjpcInJlZFwiLFxyXG5cdGZvbnRzaXplOlwiNTRweFwiXHJcbn1cblxuXG4vLy8vLy8vLy8vLy8vLy8vLy9cbi8vIFdFQlBBQ0sgRk9PVEVSXG4vLyAuL2FwcC9ncmVldGVyLmpzXG4vLyBtb2R1bGUgaWQgPSAxXG4vLyBtb2R1bGUgY2h1bmtzID0gMCJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///1\n");
 
 /***/ })
 /******/ ]);
