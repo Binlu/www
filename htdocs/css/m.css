@@ -1,0 +1,239 @@
+﻿/*@charset "utf-8";
+@font-face{
+	
+	src: url('../font/applew3.ttf'),
+	     url('../font/applew3.eot');
+}
+@font-face{
+	
+	src: url('../font/applew6.ttf'),
+	     url('../font/applew6.eot');
+}*/
+/*公共样式*/
+body{background: #1a1a1a;font-size:16px;font-family: "Microsoft YaHei","微软雅黑","Lucida Grande",Arial,Verdana;line-height:150%;color:#333; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; /*修正手持设备字体变化*/}
+* {margin: 0;padding: 0;}
+h1,h2,h3,h4,h5,h6,img,ul,li,a,span,p,i,b,em,form,input,label,div,body,html{margin:0;padding:0;border:none;list-style-type:none; font-weight:normal;}
+img{border: 0;vertical-align: middle;-ms-interpolation-mode:bicubic/*ie7 解决图片缩放失真问题*/}
+
+a{blr:expression(this.onFocus=this.blur());outline:none;text-decoration:none; color:#333;background: transparent; /*修正win8系统IE连接灰色背景*/}
+a:hover{/*text-decoration:underline;*/ /*color:#d02927;*/}
+a:active{star:expression(this.onFocus=this.blur());}/*去掉点击链接时的虚线外框*/
+a, .top:hover, .tingico { -webkit-transition: all 0.25s linear 0.01s; -moz-transition: all 0.25s linear 0.01s; -ms-transition: all 0.25s linear 0.01s; -o-transition: all 0.25s linear 0.01s; transition: all 0.25s linear 0.01s; }
+
+.container_pc{
+	width: 100%; padding:20px 0;
+}
+.container_pc img{
+	display: block; width: 100%;
+}
+.container_pc img:first-child{ }
+.picfont{ width: 100%; margin: 0 auto;}
+.picfont img{ width: 100%; display: block; }
+/*清楚浮动*/
+.clearfix:after{content:" ";clear:both;height:0;visibility:hidden;display:block;}
+.clearfix{*zoom:1;}
+/*header*/
+.hed {width: 100%;height: 55px;background-color: #000;}
+.othertop{ width: 100%; position: fixed; top: 0; left: 0;}
+.top {  display:none;}
+ 
+.mtop { width:100%; height:55px; line-height:55px; position:relative;}
+.mtpleft { float:left; width: 132px;}
+.mtpleft img{ display: block; width: 100%; }
+.mtpright { float:right; padding-right:3%; position:relative;}
+.mtpright img { width:80%}
+.mtpright dl { position:absolute; top:55px; right:0px; width:200px; background:rgba(255,255,255,0.8); z-index:999; display:none; }
+.mtpright dl dt { text-align:center; line-height:52px; border-bottom:1px solid #bbb;}
+
+.nummainbg { position:fixed; top:0px; right:0px; width:100%; height:100%; background:rgba(0,0,0,0.8);   z-index:998; display:none;}
+.toph { height:50px; clear:both;}
+.buyclick { position:absolute; right:0px; top:0px; z-index:99;}
+.buyclick img  { width:65%;}
+
+.sous {width: 200px;height: 30px; line-height:28px; border-radius: 15px 15px 15px 15px;border:1px solid #888;  font-size:16px; text-indent: 1.2em;outline: none; z-index:99999;  padding-right:27px;}
+.icon01 {margin-top: -44px;position: absolute;right: 215px;cursor: pointer;}
+.subm {z-index:999999; position:absolute; top:5px; right:11px;   cursor:pointer}
+.gm {float: right;margin-top: -47px; font-size:14px; color: #FFF;  background:url(../images/cart.png) no-repeat left; padding-left:20px; display:none; }
+/*header结束*/
+
+.banner-index{ width: 100%; margin-bottom: 30px;}
+.banner-index img{
+	width: 100%; display: block;
+}
+/*baner图切换样式开始*/
+.banners{ width:100%; height:auto; overflow:hidden; position:relative; z-index:1; display: none;}
+.bannermain { width:100%; height:auto; position:relative; z-index:1; overflow:hidden; }
+.flexslider{position:relative;height:auto;overflow:hidden;background:url(../images/loading.gif) 50% no-repeat;}
+.mainbg { position:absolute; width:100%; height:100%; left:0px; top:0px; background:url(../images/main_bg.png); z-index:33;}
+.slides{position:relative;z-index:1;}
+.slides li{ height:auto; overflow:hidden;}
+.flex-control-nav{position:absolute;bottom:40px;z-index:2;width:100%;text-align:center; padding:0px;}
+.flex-control-nav li{display:inline-block;width:26px;height:8px; margin:0 5px;*display:inline;zoom:1; padding:0px;}
+.flex-control-nav a{display:inline-block;width:26px;height:8px;line-height:40px;overflow:hidden;background:url(../images/dot.png) right 0 no-repeat;cursor:pointer;}
+.flex-control-nav .flex-active{background-position:0 0;}
+.flex-direction-nav{position:absolute;z-index:3;width:100%;top:45%;}
+.flex-direction-nav li a{display:block;width:50px;height:50px;overflow:hidden;cursor:pointer;position:absolute;}
+.banner ol { margin-left:0px !important;}
+/*baner图切换样式结束*/
+.smallbanner{display:block; width:100%; }
+.smallbanner img{ display: block; width: 100%; }
+.banner-index{ display:none; }
+/*miss 页面*/
+.mis-banners{ width: 100%; margin-top: 55px;}
+.mtpright dl dt .cq{ display: inline-block; width: 62px; height: 34px; background: url('../img/cqbg.png') no-repeat; margin:0 auto; line-height: 34px;}
+.ny2-banners{display: none; margin-top: 55px;}
+.nysBanner{ display: block; width: 100%; margin-top: 55px; }
+.nysBanner img{ display: block; width: 100%; }
+/*===
+	miss 页面css样式
+==*/
+.brand{ width: 100%; overflow: hidden; height: auto; background: #1a1a1a; padding:20px 0; }
+.brandbot{ padding-bottom: 20px; }
+.brandIn{ width: 90%;padding:0 5%;  }
+.brandtitle{ 
+	width: 120px; height: 120px; background: url('../img/brand.png') no-repeat; margin: 0 auto;
+	text-align: center; line-height: 120px; font-size: 24px; background-size: cover; 
+	color: #f4b524;
+ }
+ .introduction{
+ 	float: left; width: 100%; color: #fff; font-size: 14px;
+ 	line-height: 2; font-weight: 400;
+ }
+ .brand-china-font{ margin-top: 20px; }
+ .brand-english-font,.brand-china-fontcenter{
+ 	margin-top: 20px;
+ }
+ /*===
+	joinus 页面css样式
+==*/
+.joinUs{ width: 90%; padding: 20px 5% 30px 5%;  margin: 0 auto; }
+.joinUs h1{ margin-top: 20px; font-size: 24px; color:#fff;}
+.joinUs .content{ margin-top:15px;    font-size: 14px; color: #fff; line-height:1.8; }
+.joinUs p.button{ width: 200px; height: 40px; text-align:center; line-height: 40px; font-size: 24px;   margin: 0 auto; margin-top: 30px;  background: #e5a137;;}
+.joinUs p.button a{ display: block;  color: #fff; width: 100%; height: 100%; }
+
+/* .container */
+
+/* service */
+.container{ width: 100%; height: auto;  padding-bottom:30px; }
+.contentIn{ width: 100%; }
+.contentIn .contLeft{ width:90%; margin:0 auto; height: auto;}
+.contentIn .contLeft img{ width:100%; display:block; }
+.contentIn .contRight{ width: 90%; margin: 30px auto; overflow: hidden;}
+
+.contentIn .contRight h2{  font-size: 20px; color: #fff; margin-top:5px; }
+.contentIn .contRight .con-right-duce{font-size: 14px; width: 100%; color: #fff;  line-height:2; margin-top:15px;}
+.contentIn .contRight .servicelist{ margin-top:15px; overflow: hidden;}
+.contentIn .contRight .servicelist p{ color:#fff; float: left; width: 18%; height: 32px;  text-align: center; line-height: 32px; margin-right:2%; background:#8c97cb;font-size: 12px; }
+.contentIn .contRight .servicelist p:last-child{ margin-right:0; }
+.contentIn .zhny .servicelist{margin-top:15px; }
+.contentIn .contRight .interval p{ background: #af889c; }
+.contentIn .qmny .servicelist{ margin-top: 26px; }
+/* 合作伙伴 */
+.partners{ width: 95; padding: 30px; background: #fff; margin:0 auto; }
+.partnersIn{ width: 100%;}
+.partnersIn .partCont{ margin-top:20px; }
+.partnersIn .partCont h2{ font-size: 24px; font-weight: normal; border-bottom: 2px #c8a164 solid; padding-bottom: 16px; color:#c8a164; }
+.partnersIn .partCont .ContImg{ width: 100%; overflow: hidden;  }
+.partnersIn .partCont .ContImg img{ width: 30%; display: block; float: left; margin-left:5%;  margin-top:20px; }
+.partnersIn .partCont .ContImg img.Oleft{ margin-left:0; }
+/* 能源2 代码css */
+.process{ width: 100%; background: #dfa927; padding: 5px 0 20px 0; }
+.processIN{ width: 90%; margin: 5% auto; }
+.processIN .contOne{ width: 100%; }
+.processIN .contOne .contOleft{ width: 100%; text-align: center; }
+.processIN .contOne .contOleft p{
+	font-size: 16px;  color: #efd7ab; margin-top: 5px;
+}
+.processIN .contOne .contOright{
+	width: 70%; margin: 30px auto;
+}
+.processIN .contOne .contOright img{
+	display: block; width: 100%;
+}
+.PCIcon{ display: none; }
+.MBIcon{ display: block; }
+.IconCont{
+	  margin-top: 10px;
+}
+.IconCont:first-child{ margin-top:30px; }
+.conticon{
+	width: 90%; margin: 0 auto;
+}
+.conticon .IconCont p.IconImg{
+	width: 50%; margin:0 auto;
+}
+.conticon .IconCont p.IconImg img{
+	display: block; width: 100%;
+}
+.iconArrow{ width: 54px; height: 71px; margin:0 auto; }
+.iconArrow img{ display: block; width: 100%; }
+.conticon .IconCont p{margin-top:10px; text-align: center;  font-size: 16px; }
+.conticon .IconCont p.IconTitle{ color: #fff; }
+.conticon .IconCont p.IconFont{ color: #505050; }
+/*能源模式 手机css代码*/
+.model{ width: 100%; padding:30px 0; background: #fff; height: auto; overflow: hidden; }
+.modelIn{ width: 90%; margin: 0 auto; overflow: hidden; height: auto; }
+.modelBox{ margin-top: 50px;}
+.modelBox:first-child{ margin-top: 20px; }
+.modelIn .modelImg{ width: 50%; margin: 0 auto; }
+.modelIn .modelImg img{ display: block; width: 100%; }
+.modelcontent{ width: 100%; margin-top: 20px; }
+.modelcontent .modelTitle{ font-size: 20px;  height: 20px; color: #6c6c6c;}
+.modelcontent .modelFont{ width: 100%; font-size: 16px; color: #6c6c6c; margin-top: 15px; line-height: 1.5; }
+.modelcontent .list{ width: 100%; height: auto; overflow: hidden; margin-top: 20px; }
+.modelcontent .list ul{ overflow: hidden; width: 100%; }
+.modelcontent .list ul li{ float: left; margin-left: 3%; }
+.modelcontent .list ul li{ width: 31%; height:auto; }
+.modelcontent .list ul li p.ListTop{ width:32px ; height: 32px; margin: 0 auto; }
+.modelcontent .list ul li p.ListTop img{ display: block; width: 100%; }
+.modelcontent .list ul li p.ListFont{ font-size: 14px; margin-top:12px; }
+.allOleft{ margin-left: 0 !important; }
+.Lastwidth{ width: 31%; }
+/* 能源2  合作模式 css代码 */
+.cooperation{width: 100%; overflow: hidden; height: auto;  background: #abc3b3; padding: 30px 0;  }
+.cooperationIn{ width: 90%; margin: 0 auto ;  }
+.cooperationIn h2{font-weight: normal; font-size: 24px;  text-align: center; color:#ffffff; line-height: 24px;};
+.cooperationIn .user{ width: 100%; height: auto;}
+.cooperationIn .business{ margin-top: 20px; }
+.cooperationIn .personal{ margin-top: 6px; }
+.cooperationIn .user .title{ text-align: center; line-height: 50px; width: 100%; background: #e2ba31;  color: #fff; font-size: 18px; }
+.cooperationIn .user .userCont{ padding-left: 2%; background: #333a3f; width:98%; margin-top: 6px; }
+.cooperationIn .user .userCont .contIN{ width: 100%;background: #fff; padding: 20px 0; }
+.cooperationIn .user .userCont .contIN .contLefto{ width: 80%; margin: 0 auto;}
+.cooperationIn .user .userCont .contIN .contLefto h3{ font-size: 18px; color: #333b3f; line-height: 18px; margin-top: 10px; text-align: center; ; }
+.cooperationIn .user .userCont .contIN .contLefto p{ margin-top: 10px; font-size: 16px; line-height: 1.8;}
+.cooperationIn .user .userCont .contIN .contRight{ width: 80%; margin: 0 auto; }
+.cooperationIn .user .userCont .contIN .contRight img{ display: block; width: 100%; }
+/* case 页面 cass 代码 */
+.case{ width: 100%; padding: 30px 0; overflow: hidden; height: auto; background: #1a1a1a; }
+.caseIn{ width: 90%; margin: 0 auto; }
+.caseIn .caseAll{ width: 100%;}
+.caseTwo{ margin-top: 40px;}
+.caseIn .caseAll .title{ padding-left: 10px; line-height: 18px; font-size: 18px; color: #fff;  }
+.caseIn .caseAll .caseCont{ width: 100%; margin-top: 20px; }
+.caseIn .caseAll .caseCont .caseContLeft{ width: 100%; height: auto; }
+.caseIn .caseAll .caseCont .caseContLeft img{ display: block; width: 100%; }
+.caseIn .caseAll .caseCont .caseContRight{ width: 100%; float: right; }
+.caseIn .caseAll .caseCont .caseContRight ul{ width: 100%;}
+.caseIn .caseAll .caseCont .caseContRight ul li{ width: 50%; float: left;  text-align: center; margin-top: 20px; }
+.caseIn .caseAll .caseCont .caseContRight ul li i{ display: block; width: 50%; margin:0 auto; }
+.caseIn .caseAll .caseCont .caseContRight ul li i img{ display: block; width: 100%; }
+.caseIn .caseAll .caseCont .caseContRight ul li p{ color: #fff; font-size: 12px; text-align: center; margin-top: 10px; line-height: 12px; }
+/*footer*/
+footer{width: 100%; background: #1a1a1a;}
+.footIn{ width: 95%; padding-top: 20px; padding-left: 5%; }
+.footIn .footLeft{ width: 100%; margin-top: 30px;  padding-bottom: 20px;}
+.footIn .footLeft p.ftLogo{ width: 100px; }
+.footIn .footLeft p.ftLogo img{ display: block; width: 100%; }
+.footIn .footLeft p.fFont{ font-size: 18px; color: #dadada; }
+.footIn .footLeft p.fBa{ font-size: 14px; color: #777777; font-family: '微软雅黑'; -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale; margin-top: 30px;}
+/*foot left*/
+.footIn .footRight{ width: 100%; background: url('../img/footrightbgsmall.jpg'); background-size: cover;}
+.footIn .footRight p.Rdashe{ width: 60px; height:3px; background: #f0b113; }
+.footIn .footRight p.Rconcant{ font-size: 18px; color: #fff; margin-top: 16px; }
+.footIn .footRight p.Rposition{ font-size: 16px; margin-top: 15px;  color: #b5b5b5;}
+.footIn .footRight p.Rposition span{ display: inline-block; }
+.footIn .footRight p.Rposition span:first-child{ width: 72px;}
+

@@ -1,0 +1,32 @@
+.content{margin-top: 70px;background-color: #3d3f46;color: #fff;}
+.form-div{width: 1200px;margin: auto;padding: 30px 0 60px;}
+.form-div>h3{;padding: 20px 0;margin: auto;line-height: 1.5em;background-color: #f2d75f;color: #fff;font-weight: bold;text-align: center;font-size: 18px;}
+
+.form-area{margin: auto;font-size: 14px;}
+.form-area>h3{padding: 15px;margin-bottom: 30px;border-bottom: 1px solid #eee;text-align: center;}
+.form-section{float: left;width: 35%;}
+.form-item,.form-radio-item{position: relative;padding-left: 8em;margin-bottom: 30px;height: 40px;background-color: #fff;color: #333}
+.fr-form-item{float: right;}
+.full-form-item{width: 80%;}
+.form-radio-item{background-color: transparent;color: #fff;}
+.form-item>p,.form-radio-item>p{z-index: 10;position: absolute;left: 0;top: 42px;color: #f23;font-size: 12px;display: none;}
+.form-item>label,.form-radio-item>span{z-index: 10;position: absolute;left: 0;top: 0;display: inline-block;width: 6.5em;padding-left: 1em;height: 40px;line-height: 40px;background-color: #f2d75f;color: #fff;cursor: default;}
+.form-item>input[type="text"]{width: 100%;height: 40px;font-size: 14px;outline: none;}
+.form-radio-item>input[type="radio"]{margin-top: 10px;vertical-align: middle;}
+.form-radio-item>label{display: inline-block;width: 4em;margin-top: 8px;margin-left: 5px;margin-right: 20px;vertical-align: middle;}
+
+.form-area>button{float: left;display: block;width: 100%;height: 60px;line-height: 60px;font-size: 18px;margin-top: 20px;letter-spacing: 0.5em;cursor: pointer;border-style: none;background-color: #74bd89;color: #fff;font-weight: bold;text-align: center;}
+.form-area>button:hover{background-color: #4abd6b;}
+
+#map{float: left;width: 100%;height: 320px;background-color: #fff;margin-bottom: 30px;}
+
+.clear{zoom:1;clear: both;}
+.clear:after{display: block;content: "";clear: both;}
+
+
+
+@media only screen and (max-width: 999px){      
+	.form-div{width: auto;padding-left: 20px;padding-right: 20px;}
+	.full-form-item,.form-section{width: 100%}
+	#map{height: 180px;}
+}
